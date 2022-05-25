@@ -59,10 +59,12 @@ for ($i = 0; $i < count($phpMovies); $i++) {
                 <div class="col">
                     <div class="card overflow-hidden border-2 bg-secondary border-dark h-100 text-center text-light">
                         <img src="<?php echo $movie->poster ?>" alt="">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column justify-content-between">
                             <h4><?php echo $movie->title ?></h4>
-                            <small><?php echo $movie->year ?></small>
-                            <p>Vote: <?php echo $movie->vote ?>/10</p>
+                            <div class="pt-1">
+                                <small><?php echo $movie->year ?></small>
+                                <p class="mb-0">Vote: <?php echo $movie->vote ?>/10</p>
+                            </div>
                         </div>
                     </div>
                 </div>
